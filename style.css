@@ -332,6 +332,7 @@ ul li {
   padding-top: 3rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -403,24 +404,6 @@ ul li {
   transform: scale(1.1);
 
 }
-
-/* #first_element { */
-/* background-image: url("images/micro_rentals.png"); */
-/* background-color: rgb(5, 50, 56);
-  background-blend-mode: multiply; */
-/* } */
-
-/* #second_element {
-  background-image: url("images/micro_retail.png");
-}
-
-#third_element {
-  background-image: url("images/radio_network_towers.png");
-}
-
-#fourth_element {
-  background-image: url("images/micro_warehousing.png");
-} */
 
 .micro_rentals_container h3 {
   font-family: 'Rubik', sans-serif;

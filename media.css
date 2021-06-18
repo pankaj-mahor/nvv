@@ -33,6 +33,14 @@
         margin: 0 auto;
     }
 
+    .marketplace h1,
+    .second_section h1,
+    .mining h1,
+    #micro-finance h1,
+    .sixth_section h1 {
+        font-size: 2rem;
+    }
+
     main .text-side {
         width: 90%;
         margin: 0 auto;
@@ -56,7 +64,7 @@
     }
 
     #micro-finance .text-section div {
-        width: 100%;
+        width: 90%;
         margin: 0 auto;
         border-right: none;
         border-bottom: 2px solid #fff;
@@ -159,4 +167,172 @@
     .btn-outer:nth-of-type(2) {
         margin-left: 2rem;
     }
+}
+
+@media (min-width:340px) and (max-width:767px) {
+    .nav {
+        width: 90%;
+    }
+
+    #close {
+        /* padding: 2rem 2.5rem; */
+        padding-right: 0;
+        cursor: pointer;
+        /* height: 5vh; */
+
+    }
+
+    #dropdown .container {
+        padding: 0;
+    }
+
+    .network-map img {
+        /* margin: 1rem; */
+        width: 100%;
+        height: auto;
+    }
+
+    nav {
+        height: 15vh;
+    }
+
+    .explore {
+        display: none;
+    }
+
+    #logo-main {
+        width: 200px;
+    }
+
+    main {
+        margin-top: 2vh;
+    }
+
+    main h1 {
+        font-size: 1.5rem;
+        margin: 0 auto;
+    }
+
+
+
+    .btn-outer {
+        display: block;
+        margin-bottom: 1rem;
+        margin: 1.5rem auto;
+    }
+
+    /* MINING SECTION NOW */
+    #mine .text-section div:nth-child(1),
+    #mine .text-section div:last-of-type {
+        display: block;
+        margin: 1rem auto;
+        text-align: center;
+        /* align-self: center; */
+    }
+
+    #mine .text-section div:nth-child(2) {
+        margin: 1rem auto;
+    }
+
+    #mine .text-section div:last-of-type {
+        width: inherit;
+        float: none;
+    }
+
+    #header-img,
+    #mining-img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        /* margin: 0 0.5rem; */
+        /* background-blend-mode: multiply; */
+    }
+
+    /* MICRO FINANCE */
+
+    /* WHAT DO WE DO */
+    .micro_rentals_container {
+        margin: 2rem 0;
+        margin-left: 0;
+    }
+
+    /* OUR PARTNERS */
+    .our-partners {
+        height: 75vh;
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: max-content;
+    }
+
+    .hm-pr-item {
+        margin: 0;
+        height: 70px;
+        padding: 0;
+    }
+
+    .hm-pr-item a {
+        display: inline-block;
+        width: 120px;
+        height: 70px;
+        /* margin-top: -1rem; */
+        margin-left: 1rem;
+    }
+
+    .hm-pr-item a img {
+        opacity: .7;
+        width: 150px;
+        border-radius: 5px;
+        padding: 1rem;
+        transition: all .4s ease-in-out;
+    }
+
+    .sixth_section {
+        padding-top: 1.5rem;
+    }
+
+    /* FOOTER */
+    .subscribe-email h1 {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .subscribe-email input[type="email"] {
+        text-align: center;
+        display: block;
+        font-size: 1.2rem;
+        width: 100%;
+        background: transparent;
+        color: #fff;
+        margin-bottom: 1.5rem;
+    }
+
+    .footer-hyperlinks {
+        width: 100%;
+        margin: 1rem auto;
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+
+    .links {
+        display: block;
+        width: 100%;
+        margin: 0.5rem;
+    }
+
+    .download {
+        text-align: center;
+    }
+
+    .download-app {
+        justify-content: center;
+        width: 100%;
+        margin: 1rem auto;
+    }
+
 }
