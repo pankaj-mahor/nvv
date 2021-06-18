@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome CDN for icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="shortcut icon" href="../favicon (2).ico" type="image/x-icon">
+    <!-- Bootstrap CDN -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+
+    <!-- Google Fonts NUNITO font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- External css file -->
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css.css">
+    <link rel="stylesheet" href="dropdown.css">
+    <link rel="stylesheet" href="./media.css">
+    <title>Nucleas Vision </title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="Nucleas Vision Logo" id="logo-main">
+                </div>
+                <ul>
+                    <!-- <li><a href="#">Consumer</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Token</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">About Us</a></li> -->
+                    <li id="last-one">
+                        <div class="list-item" id="add" onclick="add();">
+                            <p class="explore">Explore</p>
+                            <img src="https://img.icons8.com/material/20/ffaa00/thumbnails.png" id="icon-nav" />
+                        </div>
+
+                        <div id="dropdown" class="drop hide">
+                            <div class="container">
+                                <div class="close" id="">
+                                    <i class="fa fa-times" id="close" onclick=remove();></i>
+                                </div>
+                                <div class="drop-boxes">
+                                    <a class="drop-box" href="#">
+                                        <img src="./images/icons/news.svg" alt="">
+                                        Consumer
+                                    </a>
+                                    <a class="drop-box" href="#">
+                                        <img src="./images/icons/wallet.svg" alt="">
+                                        Bussiness
+                                    </a>
+                                    <a class="drop-box" href="#">
+                                        <img src="./images/icons/docs.svg" alt="">
+                                        Token
+                                    </a>
+                                    <a class="drop-box" href="#">
+                                        <img src="./images/icons/ecosystem.svg" alt="">
+                                        Product
+                                    </a>
+                                    <a class="drop-box" href="#">
+                                        <img src="./images/icons/coordicide.svg" alt="">
+                                        Documentation
+                                    </a>
+                                    <a class="drop-box" href="#">
+                                        <img src="./images/icons/Tangle_Explorer.svg" alt="">
+                                        About us
+                                    </a>
+                                    <a class="drop-box" href="#">
+                                        <img src="./images/icons/training.svg" alt="">
+                                        Download
+                                    </a>
+                                    <a class="drop-box" href="#">
+                                        <img src="./images/icons/data-maketplace.svg" alt="">
+                                        Data Marketplace
+                                    </a>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </li>
+
+
+                </ul>
+                <div class="hamburger hide"></div>
+            </div>
+        </nav>
+
+
+        <main>
+            <div class="text-side">
+                <h1>World's Largest IoT Private Communication Network With Micro Real Estate Assets</h1>
+                <div class="btns">
+                    <!-- <a href="#" class="btn-a">Get Started</a> -->
+                    <!-- <a href="#" class="btn-a">Lite Paper</a> -->
+
+                    <div class="btn-outer">
+                        <div class="focus-container mrb50">
+                            <div class="glow-focus top-left">
+                                <img src="http://52.187.109.230/nv/v0/img/glow-focus-left.png">
+                            </div>
+                            <div class="glow-focus bottom-left">
+                                <img src="http://52.187.109.230/nv/v0/img/glow-focus-left.png">
+                            </div>
+                            <div class="glow-focus top-right">
+                                <img src="http://52.187.109.230/nv/v0/img/glow-focus-left.png">
+                            </div>
+                            <div class="glow-focus bottom-right">
+                                <img src="http://52.187.109.230/nv/v0/img/glow-focus-left.png">
+                            </div>
+                            <a class="telegram-btn" href="https://t.me/NucleusVision" target="_blank">Get Started</a>
+                        </div>
+                    </div>
+
+                    <div class="btn-outer">
+                        <div class="focus-container mrb50">
+                            <div class="glow-focus top-left">
+                                <img src="http://52.187.109.230/nv/v0/img/glow-focus-left.png">
+                            </div>
+                            <div class="glow-focus bottom-left">
+                                <img src="http://52.187.109.230/nv/v0/img/glow-focus-left.png">
+                            </div>
+                            <div class="glow-focus top-right">
+                                <img src="http://52.187.109.230/nv/v0/img/glow-focus-left.png">
+                            </div>
+                            <div class="glow-focus bottom-right">
+                                <img src="http://52.187.109.230/nv/v0/img/glow-focus-left.png">
+                            </div>
+                            <a class="telegram-btn" href="#" target="_blank">Lite Paper</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img-side">
+                <img src="./images/machine.jpeg" alt="AMchine Image" id="header-img">
+            </div>
+        </main>
+    </header>
+
+    <section class="mining">
+        <h1>MultiCoin Mining</h1>
+        <p>A new way to mine crypto</p>
+        <div id="mine">
+            <div class="text-section">
+                <div>
+                    <span><img src="https://img.icons8.com/ios-filled/50/ffaa00/golden-fever.png" /></span>
+                    <p>Mine</p>
+                </div>
+                <div>
+                    <span><img src="https://img.icons8.com/ios-filled/50/ffaa00/database.png" /></span>
+                    <p>Multi coin network infrastructure</p>
+                </div>
+                <div>
+                    <span><img src="https://img.icons8.com/metro/50/ffaa00/data-configuration.png" /></span>
+                    <p>Ncash economics </p>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="./images/imgonline-r.png" alt="Mine" id="mining-img">
+            </div>
+        </div>
+    </section>
+
+    <section class="marketplace">
+        <h1>Micro Real estate Marketplace</h1>
+        <h2>Products & Services</h2>
+        <div class="five-boxes">
+            <div class="box-1">
+                <h3>Real Estate Owners</h3>
+                <p>Mall owners, gas station , Home owners, Railway stations , airports salon, Supermarket, retails
+                    stores, hospitals</p>
+                <!-- <ul>
+                    <li>Mall Owners</li>
+                    <li>Gas Station</li>
+                    <li>Home Owners</li>
+                    <li>Railway Statition</li>
+                    <li>Airports Salon</li>
+                    <li>Supermarket</li>
+                    <li>Reatail Stores</li>
+                    <li>Hospitals</li>
+                </ul> -->
+            </div>
+            <div class="box-1">
+                <h3>Use Cases</h3>
+                <p>Cloud Kitchen, Vending machine, Tv anteena , Micro warehouse , micro rentals, shelfspaces, digital
+                    screen , radio sensers</p>
+                <!-- <ul>
+                    <li>Cloud Kitchen</li>
+                    <li>Vending Machine</li>
+                    <li>Tv Antenna</li>
+                    <li>Micro Warehouse</li>
+                    <li>Micro Rentals</li>
+                    <li>Shelfspaces</li>
+                    <li>Digital Screeen</li>
+                    <li>Radio Sensors</li>
+                </ul> -->
+            </div>
+            <div class="box-1">
+                <h3>Brands</h3>
+                <p>Everyone Who wants to place their product, distribute, advertise, Rent, Sell.</p>
+            </div>
+            <div class="box-1">
+                <h3>Consumers</h3>
+                <p>Consumers who want to consume either product or service</p>
+            </div>
+            <div class="box-1">
+                <h3>Telecome/MNO</h3>
+                <p>MNOs who was to share network to provide voice and data services</p>
+            </div>
+        </div>
+
+        <div class="network-map">
+            <img src="./images/networkmap.png" alt="">
+        </div>
+    </section>
+
+    <section id="micro-finance">
+        <h1>Micro Finance</h1>
+        <div class="text-section">
+            <div>
+                <span><img src="https://img.icons8.com/ios-filled/50/ffaa00/blockchain-technology.png" /></span>
+                <p>De-Fi Platform </p>
+            </div>
+            <div>
+                <span><img src="https://img.icons8.com/ios-filled/50/ffaa00/real-estate.png" /></span>
+                <p>Micro real estate assets </p>
+            </div>
+            <div>
+                <span><img src="https://img.icons8.com/ios-filled/50/ffaa00/handle-with-care.png" /></span>
+                <p>Description </p>
+            </div>
+    </section>
+
+    <section id="core-technology">
+        <div class="text-side-area">
+            <h1>Core Technologies</h1>
+            <p>The people Network is made possible through sophisticated, open-source technologies that aim to create a
+                truly decentralized and trust less model for building wireless infrastructure.</p>
+        </div>
+        <div class="box-side-area">
+            <div class="box">
+                <!-- <img src="./images/icons/NV2.0.png" alt="NV 2.0"> -->
+                <img src="https://img.icons8.com/ios-filled/50/ffaa00/rdp-connection.png" />
+                <h3>NV 2.0 private network</h3>
+            </div>
+            <div class="box">
+                <!-- <img src="./images/icons/Iot.png" alt="NV 2.0"> -->
+                <img src="https://img.icons8.com/ios-filled/100/ffaa00/infrared-beam-sending.png" />
+                <h3>IoT assests layer</h3>
+            </div>
+            <div class="box">
+                <!-- <img src="./images/icons/De-fi.png" alt="NV 2.0"> -->
+                <img src="https://img.icons8.com/material-sharp/100/ffaa00/money.png" />
+                <h3>De-fi lending</h3>
+            </div>
+            <div class="box">
+                <!-- <img src="./images/icons/microrealestate.png" alt="NV 2.0"> -->
+                <img src="https://img.icons8.com/pastel-glyph/100/ffaa00/company--v2.png" />
+                <h3>Micro real estate marketlace</h3>
+            </div>
+            <div class="box">
+                <!-- <img src="./images/icons/privateBlockchain.png" alt="NV 2.0"> -->
+                <img src="https://img.icons8.com/ios-filled/100/ffaa00/lock.png" />
+                <h3>Private Blockchain</h3>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="second_section" id="aboutus">
+        <h1>What Do We Do</h1>
+        <div class="what_we_do_main_container">
+            <div class="micro_rentals_container" id="first_element">
+                <h3>Micro Rentals</h3>
+                <div class="elemnt_point">
+                    <svg width="9" height="25" viewBox="0 0 9 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.88977 10.7504L0.259766 11.6704L2.72977 0.320312H8.33977L5.26978 7.08032H8.35977L1.08977 24.7203L3.88977 10.7504Z"
+                            fill="#20ADEF" />
+                    </svg>
+                    <p>Power Bank Sharing</p>
+                </div>
+                <div class="elemnt_point">
+                    <svg width="9" height="25" viewBox="0 0 9 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.88977 10.7504L0.259766 11.6704L2.72977 0.320312H8.33977L5.26978 7.08032H8.35977L1.08977 24.7203L3.88977 10.7504Z"
+                            fill="#20ADEF" />
+                    </svg>
+                    <p>Smart Storage Lockers</p>
+                </div>
+                <div class="elemnt_point">
+                    <svg width="9" height="25" viewBox="0 0 9 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.88977 10.7504L0.259766 11.6704L2.72977 0.320312H8.33977L5.26978 7.08032H8.35977L1.08977 24.7203L3.88977 10.7504Z"
+                            fill="#20ADEF" />
+                    </svg>
+                    <p>Shelf Spaces</p>
+                </div>
+            </div>
+            <div class="micro_rentals_container" id="second_element">
+                <h3>Micro Retail</h3>
+                <div class="elemnt_point">
+                    <svg width="9" height="25" viewBox="0 0 9 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.88977 10.7504L0.259766 11.6704L2.72977 0.320312H8.33977L5.26978 7.08032H8.35977L1.08977 24.7203L3.88977 10.7504Z"
+                            fill="#20ADEF" />
+                    </svg>
+                    <p>Pop Stores</p>
+                </div>
+                <div class="elemnt_point">
+                    <svg width="9" height="25" viewBox="0 0 9 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.88977 10.7504L0.259766 11.6704L2.72977 0.320312H8.33977L5.26978 7.08032H8.35977L1.08977 24.7203L3.88977 10.7504Z"
+                            fill="#20ADEF" />
+                    </svg>
+                    <p>Automated Retail</p>
+                </div>
+                <div class="elemnt_point">
+                    <svg width="9" height="25" viewBox="0 0 9 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.88977 10.7504L0.259766 11.6704L2.72977 0.320312H8.33977L5.26978 7.08032H8.35977L1.08977 24.7203L3.88977 10.7504Z"
+                            fill="#20ADEF" />
+                    </svg>
+                    <p>Digital OOh</p>
+                </div>
+            </div>
+            <div class="micro_rentals_container" id="third_element">
+                <h3>Radio Network Towers</h3>
+                <div class="image_element_container">
+                    <img src="images/radio_network_tower.png" alt="radio_network_tower">
+                </div>
+            </div>
+            <div class="micro_rentals_container" id="fourth_element">
+                <h3>Micro Warehousing</h3>
+                <div class="elemnt_point">
+                    <svg width="9" height="25" viewBox="0 0 9 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.88977 10.7504L0.259766 11.6704L2.72977 0.320312H8.33977L5.26978 7.08032H8.35977L1.08977 24.7203L3.88977 10.7504Z"
+                            fill="#20ADEF" />
+                    </svg>
+                    <p>Fulfilment Centres</p>
+                </div>
+                <div class="elemnt_point">
+                    <svg width="9" height="25" viewBox="0 0 9 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.88977 10.7504L0.259766 11.6704L2.72977 0.320312H8.33977L5.26978 7.08032H8.35977L1.08977 24.7203L3.88977 10.7504Z"
+                            fill="#20ADEF" />
+                    </svg>
+                    <p>Storage Centres</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sixth_section">
+
+
+        <img src="images/bottom_section_main_image.png" alt="bottom_section_main_image">
+
+
+        <div class="our-partners">
+            <h1>Our Partners</h1>
+            <div class="row pr-carousel">
+
+                <div class="hm-pr-item">
+                    <a href="https://www.forbes.com/sites/tinamulqueen/2017/12/22/4-ways-the-blockchain-can-revolutionize-retail-marketing/#bcc3544453df"
+                        target="_blank">
+                        <img src="images/press/forbes.png" alt="Forbes">
+                    </a>
+                </div>
+                <div class="clearfix visible-xs-block"></div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                    <div class="hm-pr-item">
+                        <p>Business Insider</p>
+                        <a href="http://www.businessinsider.com/bitcoin-cash-price-skyrockets-to-2500" target="_blank">
+                            <img src="images/press/business-insider.png" alt="Business Insider">
+                        </a>
+                    </div>
+                </div>
+                <div class="clearfix visible-sm-block"></div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                    <div class="hm-pr-item">
+                        <p>Nasdaq</p>
+                        <a href="http://www.nasdaq.com/article/how-blockchain-can-improve-security-of-customer-data-cm871561"
+                            target="_blank">
+                            <img src="images/press/nasdaq.png" alt="Nasdaq">
+                        </a>
+                    </div>
+                </div>
+                <div class="clearfix visible-md-block"></div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                    <div class="hm-pr-item">
+                        <p>CBS News</p>
+                        <a href="https://www.cbsnews.com/news/bitcoin-futures-trading-step-toward-wider-acceptance/"
+                            target="_blank">
+                            <img src="images/press/cbs-news-logo.png" alt="CBS News">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                    <div class="hm-pr-item">
+                        <p>MarketWatch</p>
+                        <a href="https://www.marketwatch.com/story/ether-price-recovers-after-coding-freeze-bitcoin-tests-fresh-highs-2017-11-08"
+                            target="_blank">
+                            <img src="images/press/marketwatch.png" alt="MarketWatch">
+                        </a>
+                    </div>
+                </div>
+                <div class="clearfix visible-lg-block"></div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                    <div class="hm-pr-item">
+                        <p>TechWire Asia</p>
+                        <a href="http://techwireasia.com/2017/11/iot-technology-transforming-brick-mortar-retail/"
+                            target="_blank">
+                            <img src="images/press/techwire.png" alt="TechWire Asia">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                    <div class="hm-pr-item">
+                        <p>BTCManager</p>
+                        <a href="https://btcmanager.com/bitcoin-hard-fork-averted-ok-whats-next/" target="_blank">
+                            <img src="images/press/btcmanager.png" alt="BTCManager">
+                        </a>
+                    </div>
+                </div>
+                <div class="clearfix visible-md-block"></div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                    <div class="hm-pr-item">
+                        <p>Cryptobriefing</p>
+                        <a href="https://cryptobriefing.com/bitcoins-saturn-v-performance-explained-experts/"
+                            target="_blank">
+                            <img src="images/press/crypto-briefing.png" alt="Cryptobriefing">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                    <div class="hm-pr-item">
+                        <p>Cryptocoin News</p>
+                        <a href="https://www.cryptocoinsnews.com/crypto-supporters-welcome-segwit2x-cancellation/"
+                            target="_blank">
+                            <img src="images/press/cryptocoinsnews.png" alt="Cryptocoin News">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                    <div class="hm-pr-item">
+                        <p>TheStreet</p>
+                        <a href="https://www.thestreet.com/story/14372911/1/bitcoin-hits-7-000-mark-as-newborn-bitcoin-gold-faces-safety-issues.html"
+                            target="_blank">
+                            <img src="images/press/thestreet.png" alt="TheStreet">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                    <div class="hm-pr-item">
+                        <p>Value Walk</p>
+                        <a href="http://www.valuewalk.com/2017/11/bitcoin-futures/" target="_blank">
+                            <img src="images/press/valuewalk.png" alt="Value Walk">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                    <div class="hm-pr-item">
+                        <p>Finance Magnates</p>
+                        <a href="https://www.financemagnates.com/cryptocurrency/trading/bitcoin-price-hits-7000-sec-adoption-brings-mainstream-acceptance/"
+                            target="_blank">
+                            <img src="images/press/fm-logo.png" alt="Finance Magnates">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                    <div class="hm-pr-item">
+                        <p>Blockchain Technology News</p>
+                        <a href="https://www.blockchaintechnology-news.com/2017/11/03/worlds-largest-derivatives-exchange-operator-cme-group-announces-bitcoin-futures/"
+                            target="_blank">
+                            <img src="images/press/the-block.png" alt="Blockchain Technology News">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container">
+
+        <footer>
+            <div class="subscribe-email">
+                <h1>
+                    Get Updates to your Inbox
+                </h1>
+                <form>
+
+
+
+                    <div class="btn-outer">
+                        <div class="focus-container mrb50">
+                            <div class="glow-focus top-left">
+                                <img src="http://52.187.109.230/nv/v0/img/glow-focus-left.png">
+                            </div>
+                            <div class="glow-focus bottom-left">
+                                <img src="http://52.187.109.230/nv/v0/img/glow-focus-left.png">
+                            </div>
+                            <div class="glow-focus top-right">
+                                <img src="http://52.187.109.230/nv/v0/img/glow-focus-left.png">
+                            </div>
+                            <div class="glow-focus bottom-right">
+                                <img src="http://52.187.109.230/nv/v0/img/glow-focus-left.png">
+                            </div>
+                            <input type="email" name="email" id="" placeholder="Enter Your Email">
+                            <input type="submit" value="Join Mailing List">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="footer-hyperlinks">
+                <div class="links">
+                    <p>Explore</p>
+                    <hr>
+                    <a href="#">Home</a>
+                    <a href="#">Support</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Documentation</a>
+                    <a href="#">About</a>
+                </div>
+                <div class="links">
+                    <p>Ncash Links</p>
+                    <hr>
+
+                    <a href="#">Mining</a>
+                    <a href="#">Stake</a>
+                </div>
+                <div class="links">
+                    <p>Social Media Links</p>
+                    <hr>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Reddit</a>
+                </div>
+                <div class="links contacts">
+                    <p>Contact Us</p>
+                    <hr>
+                    <a href="#">Email Us</a>
+                    <a href="#">Number</a>
+                </div>
+            </div>
+
+
+            <div class="download-app">
+                <div class="logo-footer">
+                    <a href="#">
+                        <img src="./images/logo.png" alt="nucleas Vision logo" id="footer-logo">
+                    </a>
+                </div>
+                <div class="download">
+                    <a href="#"><img src="./images/googleplaystore.png" alt="Android" id="google"></a>
+                    <a href="#">
+                        <img src="./images/appstore.png" alt="Apple" id="apple">
+                    </a>
+                </div>
+            </div>
+            <div class="terms">
+                <a href="#">terms and conditions</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Ncash Policy</a>
+                <a href="#">Press</a>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <script>
+        function add() {
+            document.getElementById('dropdown').classList.remove('hide');
+        }
+
+        function remove() {
+            document.getElementById('close').parentElement.parentElement.parentElement.classList.add('hide');
+        }
+    </script>
+</body>
+
+</html>

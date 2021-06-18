@@ -1,0 +1,162 @@
+@media (max-width:768px) {
+
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    /* sixth */
+    .sixth_section img {
+        width: 100%;
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+    }
+
+    .sixth_section p {
+        width: 90%;
+        margin-top: 1.5rem;
+        line-height: 1.4;
+        font-size: 1.1rem;
+    }
+
+    main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main h1 {
+        font-size: 1.5rem;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    main .text-side {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    #mine {
+        flex-wrap: wrap;
+    }
+
+    .five-boxes {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .box-1 {
+        max-width: 350px;
+        border-bottom: 2px solid #fff;
+        border-right: none;
+    }
+
+    #micro-finance .text-section div {
+        width: 100%;
+        margin: 0 auto;
+        border-right: none;
+        border-bottom: 2px solid #fff;
+    }
+
+    #core-technology {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .text-side-area {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .box-side-area {
+        flex-basis: 100%;
+    }
+
+    .text-side-area h1 {
+        font-size: 3rem;
+    }
+
+    .text-side-area p {
+        width: 90%;
+        margin: 1rem auto;
+
+    }
+
+    .subscribe-email {
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .subscribe-email h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .footer-hyperlinks {
+        width: 100%;
+        margin: 1rem auto;
+        flex-shrink: 1;
+    }
+
+    .links {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .contacts {
+        display: block;
+        width: 100%;
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .download-app {
+        justify-content: center;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    #footer-logo {
+        margin-bottom: 1.2rem;
+    }
+}
+
+@media (min-width:1900px) {
+
+    .nav {
+        width: 75%;
+    }
+
+    .five-boxes {
+        width: 75%;
+    }
+
+    .network-map {
+        margin-top: 2rem;
+    }
+
+    .row {
+        width: 75%;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+    }
+
+
+    .text-side {
+        margin-right: 2.5rem;
+    }
+
+    .text-side h1 {
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+
+    .btn-outer:nth-of-type(2) {
+        margin-left: 2rem;
+    }
+}
