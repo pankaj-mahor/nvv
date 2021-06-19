@@ -208,6 +208,7 @@
 
     main {
         margin-top: 2vh;
+
     }
 
     main h1 {
@@ -240,6 +241,10 @@
     #mine .text-section div:last-of-type {
         width: inherit;
         float: none;
+    }
+
+    #header-img {
+        margin-right: 0;
     }
 
     #header-img,

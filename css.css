@@ -1,3 +1,12 @@
+[data-aos="menu-area"] {
+    background: rgba(39, 87, 112, 0.5);
+    transition: all .2s linear;
+}
+
+[data-aos="menu-area"].aos-animate {
+    background: rgba(39, 87, 112, 0.5);
+}
+
 a {
     text-decoration: none;
     color: #fff;
@@ -38,6 +47,7 @@ p {
     margin-left: 0.5rem;
 }
 
+.what-do-we-do h1,
 .marketplace h1,
 .second_section h1,
 .mining h1,
@@ -108,3 +118,8 @@ p {
     transform: rotate(180deg);
 
 }
+
+/* 
+.aos-animate {
+    background: rgba(39, 87, 112, 1);
+} */
