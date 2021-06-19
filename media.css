@@ -9,9 +9,10 @@
 
     /* sixth */
     .sixth_section img {
-        width: 100%;
-        margin-top: 4rem;
-        margin-bottom: 3rem;
+        width: 95%;
+        margin: 0 auto;
+        /* margin-top: 4rem;
+        margin-bottom: 3rem; */
     }
 
     .sixth_section p {
@@ -188,7 +189,8 @@
 
     .network-map img {
         /* margin: 1rem; */
-        width: 100%;
+        width: 95%;
+        margin: 0 auto;
         height: auto;
     }
 
@@ -216,6 +218,7 @@
 
 
     .btn-outer {
+        width: 280px;
         display: block;
         margin-bottom: 1rem;
         margin: 1.5rem auto;
@@ -241,9 +244,9 @@
 
     #header-img,
     #mining-img {
-        width: 100%;
+        width: 95%;
         height: auto;
-        margin: 0;
+        margin: 0 auto;
         /* margin: 0 0.5rem; */
         /* background-blend-mode: multiply; */
     }
@@ -253,12 +256,12 @@
     /* WHAT DO WE DO */
     .micro_rentals_container {
         margin: 2rem 0;
-        margin-left: 0;
+        margin-left: 0.5rem;
     }
 
     /* OUR PARTNERS */
     .our-partners {
-        height: 75vh;
+        /* height: 75vh; */
     }
 
     .row {
@@ -268,21 +271,11 @@
         height: max-content;
     }
 
-    .hm-pr-item {
-        margin: 0;
-        height: 70px;
-        padding: 0;
-    }
-
-    .hm-pr-item a {
+    .row a {
         display: inline-block;
-        width: 120px;
-        height: 70px;
-        /* margin-top: -1rem; */
-        margin-left: 1rem;
     }
 
-    .hm-pr-item a img {
+    .row a img {
         opacity: .7;
         width: 150px;
         border-radius: 5px;
@@ -312,6 +305,10 @@
         margin-bottom: 1.5rem;
     }
 
+    .subscribe-email .btn-outer {
+        width: 280px;
+    }
+
     .footer-hyperlinks {
         width: 100%;
         margin: 1rem auto;
@@ -335,4 +332,17 @@
         margin: 1rem auto;
     }
 
+    .who {
+
+        width: 100px;
+        height: 100px;
+        font-size: 0.9rem;
+        margin: 0.5rem 0.5rem;
+
+    }
+
+    .who h6 {
+        /* font-weight: 800; */
+        font-size: 0.9rem;
+    }
 }
