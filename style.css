@@ -599,7 +599,7 @@ input::placeholder {
 
 /* PRODUCT STACK */
 #product-stack {
-  padding: 2rem 0;
+  /* padding: 2rem 0; */
 }
 
 .stack-comp {
@@ -731,6 +731,9 @@ input::placeholder {
 }
 
 #stacks {
-  max-width: 900px;
+  height: auto;
+  /* max-width: 900px; */
   width: 100%;
+  margin-top: -1rem;
+
 }
