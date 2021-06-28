@@ -1,7 +1,7 @@
 .list-item {
     display: flex;
     align-items: center;
-    background: rgba(5, 50, 56, .5);
+    /* background: rgba(5, 50, 56, .5); */
     padding: 2.5rem 1rem;
     cursor: pointer;
     position: relative;
@@ -19,7 +19,7 @@ img {
     /* height: 100px; */
     background: rgb(4, 23, 30);
     z-index: 99 !important;
-}
+} 
 
 
 #dropdown a {

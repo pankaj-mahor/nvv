@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap"
         rel="stylesheet">
+    <link rel="shortcut icon" href="./images/favicon1.png" type="image/x-icon">
     <!-- External css file -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -23,6 +24,16 @@
 </head>
 
 <body>
+    <div class="loader-bg" id="preloader">
+        <div class="loader">
+            <div class="yellow"></div>
+            <div class="red"></div>
+            <div class="blue"></div>
+            <div class="violet"></div>
+        </div>
+    </div>
+
+
     <header>
         <nav data-aos="fade-down">
             <div class="nav">
@@ -93,7 +104,7 @@
                 <div class="hamburger hide"></div>
             </div>
         </nav>
-
+ 
 
         <main data-aos="fade-in">
             <div class="text-side">
@@ -145,63 +156,20 @@
         </main>
     </header>
 
-    <section class="mining" data-aos="zoom-in">
-        <h1>MultiCoin Mining</h1>
-        <p>A new way to mine crypto</p>
-        <div id="mine" >
-            <div class="text-section" >
-                <div>
-                    <span><img src="https://img.icons8.com/ios-filled/50/ffaa00/golden-fever.png" /></span>
-                    <p>Mine</p>
-                </div>
-                <div>
-                    <span><img src="https://img.icons8.com/ios-filled/50/ffaa00/database.png" /></span>
-                    <p>Multi coin network infrastructure</p>
-                </div>
-                <div>
-                    <span><img src="https://img.icons8.com/metro/50/ffaa00/data-configuration.png" /></span>
-                    <p>Ncash economics </p>
-                </div>
-            </div>
-            <div class="image-section" >
-                <img src="./images/imgonline-r.png" alt="Mine" id="mining-img">
-            </div>
-        </div>
-    </section>
-
-    <section class="marketplace" data-aos="zoom-in">
+    <!-- <section class="marketplace hide" data-aos="zoom-in">
         <h1>Micro Real estate Marketplace</h1>
         <h2>Products & Services</h2>
-        <div class="five-boxes">
-            <div class="box-1" >
+        <img src="./images/Presentation new1 check.png" alt="" id="pmarketplace"> -->
+        <!-- <div class="five-boxes">
+            <div class="box-1">
                 <h3>Real Estate Owners</h3>
                 <p>Mall owners, gas station , Home owners, Railway stations , airports salon, Supermarket, retails
                     stores, hospitals</p>
-                <!-- <ul>
-                    <li>Mall Owners</li>
-                    <li>Gas Station</li>
-                    <li>Home Owners</li>
-                    <li>Railway Statition</li>
-                    <li>Airports Salon</li>
-                    <li>Supermarket</li>
-                    <li>Reatail Stores</li>
-                    <li>Hospitals</li>
-                </ul> -->
             </div>
             <div class="box-1">
                 <h3>Use Cases</h3>
                 <p>Cloud Kitchen, Vending machine, Tv anteena , Micro warehouse , micro rentals, shelfspaces, digital
                     screen , radio sensers</p>
-                <!-- <ul>
-                    <li>Cloud Kitchen</li>
-                    <li>Vending Machine</li>
-                    <li>Tv Antenna</li>
-                    <li>Micro Warehouse</li>
-                    <li>Micro Rentals</li>
-                    <li>Shelfspaces</li>
-                    <li>Digital Screeen</li>
-                    <li>Radio Sensors</li>
-                </ul> -->
             </div>
             <div class="box-1">
                 <h3>Brands</h3>
@@ -215,17 +183,42 @@
                 <h3>Telecome/MNO</h3>
                 <p>MNOs who was to share network to provide voice and data services</p>
             </div>
-        </div>
+        </div> -->
 
-        <div class="network-map">
+        <!-- <div class="network-map">
             <img src="./images/networkmap.png" alt="">
+        </div>
+    </section> -->
+
+    <section class="mining" data-aos="zoom-in">
+        <h1>MultiCoin Mining</h1>
+        <p>A new way to mine crypto</p>
+        <div id="mine">
+            <div class="text-section">
+                <div>
+                    <span><img src="https://img.icons8.com/ios-filled/50/ffaa00/golden-fever.png" /></span>
+                    <p>Mine</p>
+                </div>
+                <div>
+                    <span><img src="https://img.icons8.com/ios-filled/50/ffaa00/database.png" /></span>
+                    <p>Multi coin network infrastructure</p>
+                </div>
+                <div>
+                    <span><img src="https://img.icons8.com/metro/50/ffaa00/data-configuration.png" /></span>
+                    <p>Ncash economics </p>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="./images/dekstop-r.png" alt="Mine" id="mining-img">
+            </div>
         </div>
     </section>
 
+
     <section id="micro-finance" data-aos="zoom-in">
         <h1>Micro Finance</h1>
-        <div class="text-section" >
-            <div >
+        <div class="text-section">
+            <div>
                 <span><img src="https://img.icons8.com/ios-filled/50/ffaa00/blockchain-technology.png" /></span>
                 <p>De-Fi Platform </p>
             </div>
@@ -239,46 +232,48 @@
             </div>
     </section>
 
-    <section id="core-technology" data-aos="zoom-in">
-        <div class="text-side-area" >
-            <h1>Core Technologies</h1>
-            <p>The people Network is made possible through sophisticated, open-source technologies that aim to create a
-                truly decentralized and trust less model for building wireless infrastructure.</p>
-        </div>
-        <div class="box-side-area">
-            <div class="box">
-                <!-- <img src="./images/icons/NV2.0.png" alt="NV 2.0"> -->
-                <img src="https://img.icons8.com/ios-filled/50/ffaa00/rdp-connection.png" />
-                <h3>NV 2.0 private network</h3>
+    <section id="core-technology-head" data-aos="zoom-in">
+        <h1 class="blocklevel">Product Stack</h1>
+        <div id="core-technology">
+            <div class="text-side-area">
+                <h2 id="core">Core Technologies</h2>
+                <p>The people Network is made possible through sophisticated, open-source technologies that aim to
+                    create a
+                    truly decentralized and trust less model for building wireless infrastructure.</p>
             </div>
-            <div class="box">
-                <!-- <img src="./images/icons/Iot.png" alt="NV 2.0"> -->
-                <img src="https://img.icons8.com/ios-filled/100/ffaa00/infrared-beam-sending.png" />
-                <h3>IoT assests layer</h3>
-            </div>
-            <div class="box">
-                <!-- <img src="./images/icons/De-fi.png" alt="NV 2.0"> -->
-                <img src="https://img.icons8.com/material-sharp/100/ffaa00/money.png" />
-                <h3>De-fi lending</h3>
-            </div>
-            <div class="box">
-                <!-- <img src="./images/icons/microrealestate.png" alt="NV 2.0"> -->
-                <img src="https://img.icons8.com/pastel-glyph/100/ffaa00/company--v2.png" />
-                <h3>Micro real estate marketlace</h3>
-            </div>
-            <div class="box">
-                <!-- <img src="./images/icons/privateBlockchain.png" alt="NV 2.0"> -->
-                <img src="https://img.icons8.com/ios-filled/100/ffaa00/lock.png" />
-                <h3>Private Blockchain</h3>
+            <div class="box-side-area">
+                <div class="box">
+                    <img src="https://img.icons8.com/ios-filled/50/ffaa00/rdp-connection.png" />
+                    <h3>NV 2.0 private network</h3>
+                </div>
+                <div class="box">
+                    <img src="https://img.icons8.com/ios-filled/100/ffaa00/infrared-beam-sending.png" />
+                    <h3>IoT assests layer</h3>
+                </div>
+                <div class="box">
+                    <!-- <img src="./images/icons/De-fi.png" alt="NV 2.0"> -->
+                    <img src="https://img.icons8.com/material-sharp/100/ffaa00/money.png" />
+                    <h3>De-fi lending</h3>
+                </div>
+                <div class="box">
+                    <!-- <img src="./images/icons/microrealestate.png" alt="NV 2.0"> -->
+                    <img src="https://img.icons8.com/pastel-glyph/100/ffaa00/company--v2.png" />
+                    <h3>Micro real estate marketlace</h3>
+                </div>
+                <div class="box">
+                    <!-- <img src="./images/icons/privateBlockchain.png" alt="NV 2.0"> -->
+                    <img src="https://img.icons8.com/ios-filled/100/ffaa00/lock.png" />
+                    <h3>Private Blockchain</h3>
+                </div>
             </div>
         </div>
     </section>
-    <section id="product-stack"  data-aos="zoom-in">
-        <img src="./images/big-box-design.jpg" alt="" id="stacks">
-    </section>
+
     <section id="product-stack" data-aos="zoom-in">
-        <img src="./images/Sidewllad.png" alt="" id="stacks">
+        <h1>Value Proposition for Consumer</h1>
+        <img src="./images/ppt design new1.png" alt="" id="stacks">
     </section>
+
 
     <!-- <section id="product-stack" class="">
         <div class="stack-comp">
@@ -332,8 +327,8 @@
     </section> -->
 
     <section class="second_section" id="aboutus" data-aos="zoom-in">
-        <h1>What Do We Do</h1>
-        <div class="what_we_do_main_container" >
+        <h1>Value Proposition For Bussiness Owner</h1>
+        <div class="what_we_do_main_container">
             <div class="micro_rentals_container" id="first_element">
                 <h3>Micro Rentals</h3>
                 <div class="elemnt_point">
@@ -416,9 +411,13 @@
         </div>
     </section>
 
+    <!-- <section id="product-stack" data-aos="zoom-in">
+        <img src="./images/Sidewllad.png" alt="" id="stacks">
+    </section> -->
+
     <section class="sixth_section" data-aos="zoom-in">
 
-        <div class="what-do-we-do" >
+        <div class="what-do-we-do pad">
             <h1 class="bg-dar">Start telling us who you are</h1>
 
             <div class="whos">
@@ -447,78 +446,293 @@
             </div>
         </div>
 
-        <!-- <img src="images/bottom_section_main_image.png" alt="bottom_section_main_image"> -->
-
-
-        <div class="our-partners">
+        <div class="our-partners pad">
             <h1>Our Partners</h1>
-            <div class="row" >
+            <div class="row">
 
-            <a href="https://www.forbes.com/sites/tinamulqueen/2017/12/22/4-ways-the-blockchain-can-revolutionize-retail-marketing/#bcc3544453df"
-                target="_blank">
-                <img src="images/press/forbes.png" alt="Forbes">
-            </a>
-        
-
-            <a href="http://www.businessinsider.com/bitcoin-cash-price-skyrockets-to-2500" target="_blank">
-                <img src="images/press/business-insider.png" alt="Business Insider">
-            </a>
-            <a href="http://www.nasdaq.com/article/how-blockchain-can-improve-security-of-customer-data-cm871561"
-                target="_blank">
-                <img src="images/press/nasdaq.png" alt="Nasdaq">
-            </a>
-        
-
-            <a href="https://www.cbsnews.com/news/bitcoin-futures-trading-step-toward-wider-acceptance/"
-                target="_blank">
-                <img src="images/press/cbs-news-logo.png" alt="CBS News">
-            </a>
-
-            <a href="https://www.marketwatch.com/story/ether-price-recovers-after-coding-freeze-bitcoin-tests-fresh-highs-2017-11-08"
-                target="_blank">
-                <img src="images/press/marketwatch.png" alt="MarketWatch">
-            </a>
-
-            <a href="http://techwireasia.com/2017/11/iot-technology-transforming-brick-mortar-retail/"
-                target="_blank">
-                <img src="images/press/techwire.png" alt="TechWire Asia">
-            </a>
-    
-            <a href="https://btcmanager.com/bitcoin-hard-fork-averted-ok-whats-next/" target="_blank">
-                <img src="images/press/btcmanager.png" alt="BTCManager">
-            </a>
-
-            <a href="https://cryptobriefing.com/bitcoins-saturn-v-performance-explained-experts/"
-                target="_blank">
-                <img src="images/press/crypto-briefing.png" alt="Cryptobriefing">
-            </a>
-    
-            <a href="https://www.cryptocoinsnews.com/crypto-supporters-welcome-segwit2x-cancellation/"
-                target="_blank">
-                <img src="images/press/cryptocoinsnews.png" alt="Cryptocoin News">
-            </a>
-        
-            <a href="https://www.thestreet.com/story/14372911/1/bitcoin-hits-7-000-mark-as-newborn-bitcoin-gold-faces-safety-issues.html"
-                target="_blank">
-                <img src="images/press/thestreet.png" alt="TheStreet">
-            </a>
-
-            <a href="http://www.valuewalk.com/2017/11/bitcoin-futures/" target="_blank">
-                <img src="images/press/valuewalk.png" alt="Value Walk">
-            </a>
+                <a href="https://www.forbes.com/sites/tinamulqueen/2017/12/22/4-ways-the-blockchain-can-revolutionize-retail-marketing/#bcc3544453df"
+                    target="_blank">
+                    <img src="images/press/forbes.png" alt="Forbes">
+                </a>
 
 
-            <a href="https://www.financemagnates.com/cryptocurrency/trading/bitcoin-price-hits-7000-sec-adoption-brings-mainstream-acceptance/"
-                target="_blank">
-                <img src="images/press/fm-logo.png" alt="Finance Magnates">
-            </a>
+                <a href="http://www.businessinsider.com/bitcoin-cash-price-skyrockets-to-2500" target="_blank">
+                    <img src="images/press/business-insider.png" alt="Business Insider">
+                </a>
+                <a href="http://www.nasdaq.com/article/how-blockchain-can-improve-security-of-customer-data-cm871561"
+                    target="_blank">
+                    <img src="images/press/nasdaq.png" alt="Nasdaq">
+                </a>
+
+
+                <a href="https://www.cbsnews.com/news/bitcoin-futures-trading-step-toward-wider-acceptance/"
+                    target="_blank">
+                    <img src="images/press/cbs-news-logo.png" alt="CBS News">
+                </a>
+
+                <a href="https://www.marketwatch.com/story/ether-price-recovers-after-coding-freeze-bitcoin-tests-fresh-highs-2017-11-08"
+                    target="_blank">
+                    <img src="images/press/marketwatch.png" alt="MarketWatch">
+                </a>
+
+                <a href="http://techwireasia.com/2017/11/iot-technology-transforming-brick-mortar-retail/"
+                    target="_blank">
+                    <img src="images/press/techwire.png" alt="TechWire Asia">
+                </a>
+
+                <a href="https://btcmanager.com/bitcoin-hard-fork-averted-ok-whats-next/" target="_blank">
+                    <img src="images/press/btcmanager.png" alt="BTCManager">
+                </a>
+
+                <a href="https://cryptobriefing.com/bitcoins-saturn-v-performance-explained-experts/" target="_blank">
+                    <img src="images/press/crypto-briefing.png" alt="Cryptobriefing">
+                </a>
+
+                <a href="https://www.cryptocoinsnews.com/crypto-supporters-welcome-segwit2x-cancellation/"
+                    target="_blank">
+                    <img src="images/press/cryptocoinsnews.png" alt="Cryptocoin News">
+                </a>
+
+                <a href="https://www.thestreet.com/story/14372911/1/bitcoin-hits-7-000-mark-as-newborn-bitcoin-gold-faces-safety-issues.html"
+                    target="_blank">
+                    <img src="images/press/thestreet.png" alt="TheStreet">
+                </a>
+
+                <a href="http://www.valuewalk.com/2017/11/bitcoin-futures/" target="_blank">
+                    <img src="images/press/valuewalk.png" alt="Value Walk">
+                </a>
+
+
+                <a href="https://www.financemagnates.com/cryptocurrency/trading/bitcoin-price-hits-7000-sec-adoption-brings-mainstream-acceptance/"
+                    target="_blank">
+                    <img src="images/press/fm-logo.png" alt="Finance Magnates">
+                </a>
             </div>
         </div>
     </section>
 
+    <section id="our-teama" class="our-teama" data-aos="zoom-in">
+        <h1>Our Team</h1>
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus necessitatibus aperiam quisquam recusandae inventore ipsa animi excepturi perspiciatis quae dolorum quibusdam consequatur, magni ipsum exercitationem fuga libero rem in quam!</p>
+
+        <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet blanditiis reprehenderit minus totam omnis similique earum reiciendis corporis quisquam consequatur iste, exercitationem deserunt! Cum aliquid explicabo dolorum. Quia, accusamus eius?Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, consequuntur rem possimus, beatae neque recusandae voluptas atque eveniet perferendis aliquam praesentium dolore fugit ipsa, laboriosam molestias quisquam nulla deserunt aliquid!</p>
+
+        <div class="members">
+            <h5>Our 40 member team includes</h5>
+            <div class="team-counts">
+                <div class="small-boxes">
+                    <div class="big-text">9</div>
+                    <p>Blockchain <br> developers</p>
+                </div>
+                <div class="small-boxes">
+                    <div class="big-text">5</div>
+                    <p>data <br> scientists</p>
+                </div><div class="small-boxes">
+                    <div class="big-text">1</div>
+                    <p>IoT platform <br> architect</p>
+                </div><div class="small-boxes">
+                    <div class="big-text">5</div>
+                    <p>Marketing <br> experts</p>
+                </div><div class="small-boxes">
+                    <div class="big-text">9</div>
+                    <p>engineers</p>
+                </div><div class="small-boxes">
+                    <div class="big-text">11</div>
+                    <p>operations <br> professionals</p>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div class="profile-sections">
+            <div class="img">
+                <img src="./team/abhi.png" alt="IMage" class="prof-image">
+            </div>
+            <div class="written">
+                <h2>Abhishek Pitti , CEO</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident corporis ipsum pariatur optio iusto? Repellendus, corrupti. Quasi eaque omnis minus sed similique nobis, tempore atque, ad assumenda dignissimos illum corrupti?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam qui porro, minus impedit corrupti vero quibusdam facere. Exercitationem porro aliquid ab quo molestias, maiores, tempore autem eius, laboriosam cum magnam?</p>
+
+                <div class="small-images">
+                    <img src="./partners/idea.png" alt="" class="compy">
+                    <img src="./partners/idea.png" alt="" class="compy">
+                </div>
+            </div>
+        </div>
+        <div class="profile-sections">
+            <div class="img">
+                <img src="./team/martin.png" alt="IMage" class="prof-image">
+            </div>
+            <div class="written">
+                <h2>Martin Dudley, CMO</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident corporis ipsum pariatur optio iusto? Repellendus, corrupti. Quasi eaque omnis minus sed similique nobis, tempore atque, ad assumenda dignissimos illum corrupti?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam qui porro, minus impedit corrupti vero quibusdam facere. Exercitationem porro aliquid ab quo molestias, maiores, tempore autem eius, laboriosam cum magnam?</p>
+
+                <div class="small-images">
+                    <img src="./partners/idea.png" alt="" class="compy">
+                    <img src="./partners/idea.png" alt="" class="compy">
+                </div>
+            </div>
+        </div>
+        <div class="profile-sections">
+            <div class="img">
+                <img src="./team/avi.png" alt="IMage" class="prof-image">
+            </div>
+            <div class="written">
+                <h2>Avinash Pitti , CEO</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident corporis ipsum pariatur optio iusto? Repellendus, corrupti. Quasi eaque omnis minus sed similique nobis, tempore atque, ad assumenda dignissimos illum corrupti?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam qui porro, minus impedit corrupti vero quibusdam facere. Exercitationem porro aliquid ab quo molestias, maiores, tempore autem eius, laboriosam cum magnam?</p>
+
+                <div class="small-images">
+                    <img src="./partners/idea.png" alt="" class="compy">
+                    <img src="./partners/idea.png" alt="" class="compy">
+                </div>
+            </div>
+        </div>
+        <div class="profile-sections">
+            <div class="img">
+                <img src="./team/brooks.png" alt="IMage" class="prof-image">
+            </div>
+            <div class="written">
+                <h2>Brooks Atwood, Chief Design officer</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident corporis ipsum pariatur optio iusto? Repellendus, corrupti. Quasi eaque omnis minus sed similique nobis, tempore atque, ad assumenda dignissimos illum corrupti?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam qui porro, minus impedit corrupti vero quibusdam facere. Exercitationem porro aliquid ab quo molestias, maiores, tempore autem eius, laboriosam cum magnam?</p>
+
+                <div class="small-images">
+                    <img src="./partners/idea.png" alt="" class="compy">
+                    <img src="./partners/idea.png" alt="" class="compy">
+                </div>
+            </div>
+        </div>
+        <div class="profile-sections">
+            <div class="img">
+                <img src="./team/nishtha.png" alt="IMage" class="prof-image">
+            </div>
+            <div class="written">
+                <h2>Nishtha Rohatagi, Director Telecom Partnerships</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident corporis ipsum pariatur optio iusto? Repellendus, corrupti. Quasi eaque omnis minus sed similique nobis, tempore atque, ad assumenda dignissimos illum corrupti?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam qui porro, minus impedit corrupti vero quibusdam facere. Exercitationem porro aliquid ab quo molestias, maiores, tempore autem eius, laboriosam cum magnam?</p>
+
+                <div class="small-images">
+                    <img src="./partners/idea.png" alt="" class="compy">
+                    <img src="./partners/idea.png" alt="" class="compy">
+                </div>
+            </div>
+        </div>
+        <div class="profile-sections">
+            <div class="img">
+                <img src="./team/sushmita.png" alt="IMage" class="prof-image">
+            </div>
+            <div class="written">
+                <h2>Sushmita, Head, Sensor Development</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident corporis ipsum pariatur optio iusto? Repellendus, corrupti. Quasi eaque omnis minus sed similique nobis, tempore atque, ad assumenda dignissimos illum corrupti?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam qui porro, minus impedit corrupti vero quibusdam facere. Exercitationem porro aliquid ab quo molestias, maiores, tempore autem eius, laboriosam cum magnam?</p>
+
+                <div class="small-images">
+                    <img src="./partners/idea.png" alt="" class="compy">
+                    <img src="./partners/idea.png" alt="" class="compy">
+                </div>
+            </div>
+        </div>
+        
+        <div class="profile-sections">
+            <div class="img">
+                <img src="./team/chandra.png" alt="IMage" class="prof-image">
+            </div>
+            <div class="written">
+                <h2>Chandra Sekher,Director Bussines Operations</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident corporis ipsum pariatur optio iusto? Repellendus, corrupti. Quasi eaque omnis minus sed similique nobis, tempore atque, ad assumenda dignissimos illum corrupti?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam qui porro, minus impedit corrupti vero quibusdam facere. Exercitationem porro aliquid ab quo molestias, maiores, tempore autem eius, laboriosam cum magnam?</p>
+
+                <div class="small-images">
+                    <img src="./partners/idea.png" alt="" class="compy">
+                    <img src="./partners/idea.png" alt="" class="compy">
+                </div>
+            </div>
+        </div>
+        <div class="profile-sections">
+            <div class="img">
+                <img src="./team/praneeth.png   " alt="IMage" class="prof-image">
+            </div>
+            <div class="written">
+                <h2>Praneeth Vangari , Program Manager</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident corporis ipsum pariatur optio iusto? Repellendus, corrupti. Quasi eaque omnis minus sed similique nobis, tempore atque, ad assumenda dignissimos illum corrupti?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam qui porro, minus impedit corrupti vero quibusdam facere. Exercitationem porro aliquid ab quo molestias, maiores, tempore autem eius, laboriosam cum magnam?</p>
+
+                <div class="small-images">
+                    <img src="./partners/idea.png" alt="" class="compy">
+                    <img src="./partners/idea.png" alt="" class="compy">
+                </div>
+            </div>
+        </div>
+        <div class="profile-sections">
+            <div class="img">
+                <img src="./team/sanjay.png" alt="IMage" class="prof-image">
+            </div>
+            <div class="written">
+                <h2>Sanjay Bisen, Director , Sensor Development</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident corporis ipsum pariatur optio iusto? Repellendus, corrupti. Quasi eaque omnis minus sed similique nobis, tempore atque, ad assumenda dignissimos illum corrupti?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam qui porro, minus impedit corrupti vero quibusdam facere. Exercitationem porro aliquid ab quo molestias, maiores, tempore autem eius, laboriosam cum magnam?</p>
+
+                <div class="small-images">
+                    <img src="./partners/idea.png" alt="" class="compy">
+                    <img src="./partners/idea.png" alt="" class="compy">
+                </div>
+            </div>
+        </div>
+        <div class="profile-sections">
+            <div class="img">
+                <img src="./team/adithya.png" alt="IMage" class="prof-image">
+            </div>
+            <div class="written">
+                <h2>Aditya Kadmawala, Blockchain Developer</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident corporis ipsum pariatur optio iusto? Repellendus, corrupti. Quasi eaque omnis minus sed similique nobis, tempore atque, ad assumenda dignissimos illum corrupti?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam qui porro, minus impedit corrupti vero quibusdam facere. Exercitationem porro aliquid ab quo molestias, maiores, tempore autem eius, laboriosam cum magnam?</p>
+
+                <div class="small-images">
+                    <img src="./partners/idea.png" alt="" class="compy">
+                    <img src="./partners/idea.png" alt="" class="compy">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <div class="subscribe-email">
+        <div class="foot-row">
+            <div class="logo-social">
+                <a href="#">
+                    <img src="./images/logo.png" alt="nucleas Vision logo" id="footer-logo">
+                </a>
+                <div class="links social">
+                    <a href="#"><i class="fab fa-facebook fb"></i> </a>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i></a>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i></a>
+                    <a href="#">
+                        <i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-reddit"></i></a>
+                </div>
+                <div class="contactus">
+                    <a href="#">Something@email.com</a>
+                    <a href="#">+ 91 233511548</a>
+                </div>
+                <!-- <div class=" contacts">
+                    <a href="#">Email Us</a>
+                    <a href="#">Number</a>
+                </div> -->
+            </div>
+
+            <div class="explored">
+                <div class="links">
+                    <p>Explore</p>
+                    <!-- <hr> -->
+                    <a href="#"><i class="fas f-home"></i>Home</a>
+                    <a href="#"><i class="fas f-headset"></i>Support</a>
+                    <a href="#"><i class="fas f-hand-holding-heart"></i>Careers</a>
+                    <a href="#"><i class="fas f-book"></i>Documentation</a>
+                    <a href="#"><i class="fas f-address-card"></i>About</a>
+                </div>
+                <div class="links">
+                    <p>Ncash Links</p>
+                    <!-- <hr> -->
+                    <a href="#">Mining</a>
+                    <a href="#">Stake</a>
+                </div>
+            </div>
+
+            <div class="subscribe-email">
             <h1>
                 Get Updates to your Inbox
             </h1>
@@ -543,66 +757,49 @@
                 </div>
             </form>
         </div>
-        <div class="footer-hyperlinks">
-            <div class="links">
-                <p>Explore</p>
-                <hr>
-                <a href="#">Home</a>
-                <a href="#">Support</a>
-                <a href="#">Careers</a>
-                <a href="#">Documentation</a>
-                <a href="#">About</a>
-            </div>
-            <div class="links">
-                <p>Ncash Links</p>
-                <hr>
-
-                <a href="#">Mining</a>
-                <a href="#">Stake</a>
-            </div>
-            <div class="links">
-                <p>Social Media Links</p>
-                <hr>
-                <a href="#">Facebook</a>
-                <a href="#">Twitter</a>
-                <a href="#">Instagram</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">Reddit</a>
-            </div>
-            <div class="links contacts">
-                <p>Contact Us</p>
-                <hr>
-                <a href="#">Email Us</a>
-                <a href="#">Number</a>
-            </div>
         </div>
-
-
-        <div class="download-app">
-            <div class="logo-footer">
-                <a href="#">
-                    <img src="./images/logo.png" alt="nucleas Vision logo" id="footer-logo">
-                </a>
-            </div>
-            <div class="download">
+        <div class="download-apps">
+             <div class="download">
                 <a href="#"><img src="./images/googleplaystore.png" alt="Android" id="google"></a>
                 <a href="#">
                     <img src="./images/appstore.png" alt="Apple" id="apple">
                 </a>
             </div>
-        </div>
-        <div class="terms">
+            <div class="terms">
             <a href="#">terms and conditions</a>
             <a href="#">Privacy Policy</a>
             <a href="#">Ncash Policy</a>
             <a href="#">Press</a>
         </div>
+        </div>
     </footer>
+
+
 
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init(); 
+        let scrollpos = window.scrollY
+        const header = document.querySelector("nav")
+        const header_height = header.offsetHeight
+
+        const add_class_on_scroll = () => header.classList.add("bg")
+        const remove_class_on_scroll = () => header.classList.remove("bg")
+
+        window.addEventListener('scroll', function () {
+            scrollpos = window.scrollY;
+
+            if (scrollpos >= header_height) {
+                add_class_on_scroll()
+            } else {
+                remove_class_on_scroll()
+            }
+
+            console.log(scrollpos)
+        })
+    </script>
+    <script>
+        AOS.init();
 
         function add() {
             document.getElementById('dropdown').classList.remove('hide');
@@ -611,6 +808,24 @@
         function remove() {
             document.getElementById('close').parentElement.parentElement.parentElement.classList.add('hide');
         }
+
+
+        const preloader = document.querySelector('#preloader');
+
+        window.addEventListener('load', vanish)
+
+
+        function vanish() {
+            preloader.classList.add('hide');
+        }
+
+
+        // setTimeout(() => {
+        //     window.onload = (e) => {
+        //         console.log('loaded')
+        //         preloader.classList.add('hide');
+        //     }
+        // }, 3000)
     </script>
 </body>
 

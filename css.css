@@ -13,7 +13,7 @@ li {
 }
 
 .hide {
-    display: none;
+    display: none !important;
 }
 
 h1,
@@ -38,6 +38,8 @@ p {
     margin-left: 0.5rem;
 }
 
+#core-technology-head h1,
+#product-stack h1,
 .what-do-we-do h1,
 .marketplace h1,
 .second_section h1,
@@ -108,4 +110,82 @@ p {
     right: -1rem;
     transform: rotate(180deg);
 
+}
+
+
+/* LOADER */
+:root {
+    --yellow: #000;
+    --red: #000;
+    --blue: #000;
+    --violet: #000;
+}
+
+.loader-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% !important;
+    /* overflow-x: hidden !important; */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    z-index: 9999;
+}
+
+div.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.loader>div {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 100%;
+    margin: 2vw;
+    background-image: linear-gradient(145deg, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+    animation: bounce 1.5s 0.5s linear infinite;
+}
+
+.yellow {
+    background-color: var(--yellow);
+}
+
+.red {
+    background-color: var(--red);
+    animation-delay: 0.1s;
+}
+
+.blue {
+    background-color: var(--blue);
+    animation-delay: 0.2s;
+}
+
+.violet {
+    background-color: var(--violet);
+    animation-delay: 0.3s;
+}
+
+@keyframes bounce {
+
+    0%,
+    50%,
+    100% {
+        transform: scale(1);
+        filter: blur(0px);
+    }
+
+    25% {
+        transform: scale(0.6);
+        filter: blur(3px);
+    }
+
+    75% {
+        filter: blur(3px);
+        transform: scale(1.4);
+    }
 }

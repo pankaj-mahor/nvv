@@ -34,6 +34,8 @@
         margin: 0 auto;
     }
 
+    #core-technology-head h1,
+    #product-stack h1,
     .marketplace h1,
     .second_section h1,
     .mining h1,
@@ -65,7 +67,6 @@
     }
 
     #micro-finance {
-        display: none;
         width: 100%;
         margin: 0;
     }
@@ -130,7 +131,7 @@
         padding: 1rem;
     }
 
-    .download-app {
+    .download-apps {
         justify-content: center;
         max-width: 100%;
         margin: 0 auto;
@@ -138,6 +139,13 @@
 
     #footer-logo {
         margin-bottom: 1.2rem;
+    }
+
+    .foot-row {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        /* background: red; */
     }
 }
 
@@ -358,5 +366,30 @@
     .who h6 {
         /* font-weight: 800; */
         font-size: 0.9rem;
+    }
+    .small-boxes{
+        width: 150px;
+        justify-content: center;
+    }
+    .profile-sections{
+        flex-direction: column;
+        align-items: center;
+    }
+    .written {
+        margin-top: 1rem;
+    }
+    .compy{
+        width: 50px;
+    }
+
+
+}
+
+@media (max-width:912px) {
+    .foot-row {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        /* background: red; */
     }
 }
